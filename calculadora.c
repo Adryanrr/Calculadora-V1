@@ -34,8 +34,14 @@ int main(void){
             printf("O resultado da subtracao e: %d\n", resultado);
             break;
         case 3:
+            if (num2 != 0)
+            {
             resultado = num1 / num2;
             printf("O resultado da divisao e: %d\n", resultado);
+            } else{
+                printf("Operação invalida! \n");
+                printf("Erro: não é possivel dividir por zero.");
+            }
             break;
         case 4:
             resultado = num1 * num2;
